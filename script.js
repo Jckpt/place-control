@@ -29,7 +29,7 @@ for (let i = 1; i <= 31; i++) {
 
   const bottomDiv = document.createElement("div");
   bottomDiv.className = "bottom";
-  bottomDiv.textContent = "Ready";
+  bottomDiv.textContent = "Gotowe";
   numberContainer.appendChild(bottomDiv);
 }
 
@@ -61,7 +61,7 @@ for (const month of months) {
 
   const bottomDiv = document.createElement("div");
   bottomDiv.className = "bottom";
-  bottomDiv.textContent = "Ready";
+  bottomDiv.textContent = "Gotowe";
   monthContainer.appendChild(bottomDiv);
 }
 
@@ -84,7 +84,7 @@ function startCountdown(container) {
 
     if (count < 0) {
       clearInterval(countdownInterval);
-      bottomElement.innerText = "Ready";
+      bottomElement.innerText = "Gotowe";
 
       // Remove the inline styles
       removeInlineStyles(bottomElement);
